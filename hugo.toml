@@ -13,7 +13,7 @@
 # website title
 title = "Hugo-FixIt-Bundle"
 # Hostname (and path) to the root
-baseURL = "https://attajak.github.io/hugo-fixit-bundle" # "http://localhost:1313"
+baseURL = "/" # "http://localhost:1313"
 # theme list
 # theme = ["FixIt"] # enable in your site config file
 theme = [
@@ -381,7 +381,7 @@ enableEmoji = true
   # FixIt 0.3.0 | NEW public Git repository information only then enableGitInfo is true
   [params.gitInfo]
     # e.g. "https://github.com/hugo-fixit/docs"
-    repo = "https://github.com/attajak/hugo-fixit-bundle"
+    repo = "https://github.com/attajak/attajak-vercel"
     branch = "main"
     # the content directory path relative to the root of the repository
     dir = "content"
@@ -864,7 +864,7 @@ enableEmoji = true
   # FixIt 0.2.14 | NEW GitHub banner in the top-right or top-left corner
   [params.githubCorner]
     enable = true
-    permalink = "https://github.com/attajak/hugo-fixit-bundle/"
+    permalink = "https://github.com/attajak/attajak-vercel/"
     title = "View source on GitHub"
     position = "right" # ["left", "right"]
 
