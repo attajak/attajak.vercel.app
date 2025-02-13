@@ -39,8 +39,7 @@ languageName = "English"
 # whether to include Chinese/Japanese/Korean
 hasCJKLanguage = false
 # default amount of posts in each pages
-[pagination]
-  pageSize = 12
+pagination.pageSize = 12
 # copyright description used only for seo schema
 copyright = "attajak <https://attajak.github.io/>"
 # whether to use robots.txt
@@ -49,6 +48,8 @@ enableRobotsTXT = true
 enableGitInfo = true
 # whether to use emoji code
 enableEmoji = true
+timeZone = "Asia/Bangkok"
+ignoreLogs = ['warning-dev-version']
 
 # -------------------------------------------------------------------------------------
 # Menu Configuration
