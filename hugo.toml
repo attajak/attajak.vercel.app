@@ -134,6 +134,8 @@ ignoreLogs = ['warning-dev-version']
     url = "/projects/"
     title = ""
     weight = 30
+    [menu.main.params]
+      icon = "fa-solid fa-laptop-code"
   [[menu.main]]
     identfier = "about"
     parent = ""
