@@ -13,12 +13,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/attajak/hugo-fixit-bundle.git"
+    "url": "git+https://github.com/attajak/attajak.vercel.app.git"
   },
   "author": "attajak (https://github.com/attajak)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/attajak/hugo-fixit-bundle/issues"
+    "url": "https://github.com/attajak/attajak.vercel.app/issues"
   },
-  "homepage": "https://github.com/attajak/hugo-fixit-bundle#readme"
+  "homepage": "https://github.com/attajak/attajak.vercel.app#readme"
 }

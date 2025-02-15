@@ -39,7 +39,9 @@ languageName = "English"
 # whether to include Chinese/Japanese/Korean
 hasCJKLanguage = false
 # default amount of posts in each pages
-pagination.pageSize = 12
+[pagination]
+  disableAliases = false                                  pagerSize = 10
+  path = "page"
 # copyright description used only for seo schema
 copyright = "attajak <https://attajak.github.io/>"
 # whether to use robots.txt
