@@ -40,7 +40,8 @@ languageName = "English"
 hasCJKLanguage = false
 # default amount of posts in each pages
 [pagination]
-  disableAliases = false                                  pagerSize = 10
+  disableAliases = false
+  pagerSize = 10
   path = "page"
 # copyright description used only for seo schema
 copyright = "attajak <https://attajak.github.io/>"
@@ -147,6 +148,17 @@ ignoreLogs = ['warning-dev-version']
     url = "/about/"
     title = ""
     weight = 40
+    [menu.main.params]
+      icon = "fa-solid fa-signature"
+  [[menu.main]]
+    identifier = "contact"
+    parent = ""
+    pre = ""
+    post = ""
+    name = "Contact"
+    url = "/contact/"
+    title = ""
+    weight = 50
     [menu.main.params]
       icon = "fa-solid fa-person"
 
