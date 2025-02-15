@@ -1,5 +1,5 @@
 {
-  "name": "hugo-fixit-bundle",
+  "name": "attajak.vercel.app",
   "private": "true",
   "version": "1.0.0",
   "description": "This is a quick start template for Hugo theme [FixIt](https://github.com/hugo-fixit/FixIt) & [FixIt-Bundle](https://github.com/hugo-fixit/fixit-bundle). It uses Git submodule feature to load the theme.",
@@ -9,7 +9,6 @@
     "build": "HUGO_ENVIRONMENT=production hugo --gc --minify --logLevel info",
     "server": "hugo server -D -E -F -O --disableFastRender --navigateToChanged --renderToMemory --logLevel info --bind 0.0.0.0 -b http://localhost:1313/",
     "server:production": "HUGO_ENVIRONMENT=production npm run server -- --environment production",
-    "update:theme": "git submodule update --remote --merge -- ./themes/FixIt && git add themes/FixIt && git commit -m ':arrow_up: Chore(theme): update FixIt version'",
     "update": "git submodule update --remote --merge"
   },
   "repository": {
