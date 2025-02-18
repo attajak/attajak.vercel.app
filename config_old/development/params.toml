@@ -1,5 +1,0 @@
-
-[dev]
-  enable = false
-  # Check for updates
-  c4u = false

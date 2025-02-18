@@ -160,7 +160,7 @@ ignoreLogs = ['warning-dev-version']
     title = ""
     weight = 50
     [menu.main.params]
-      icon = "fa-solid fa-person"
+      icon = "fa-solid fa-envelope"
 
 # -------------------------------------------------------------------------------------
 # Related content Configuration
