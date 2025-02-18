@@ -288,7 +288,7 @@ ignoreLogs = ['warning-dev-version']
 
 [Permalinks]
   # posts = ":year/:month/:filename"
-  posts = "posts/:slugorfilename"
+  posts = "posts/:slugorcontentbasename"
 
 # -------------------------------------------------------------------------------------
 # Privacy Configuration
