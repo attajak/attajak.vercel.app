@@ -1,0 +1,38 @@
+# -------------------------------------------------------------------------------------
+# Hugo Configuration
+# See: https://gohugo.io/getting-started/configuration/
+# -------------------------------------------------------------------------------------
+
+title = "Attajak"
+baseURL = "/"
+theme = [
+  "FixIt",
+  "cmpt-flyfish",
+  "cmpt-mdevtools",
+  "cmpt-translate",
+  "component-projects",
+  "hugo-atom-feed",
+  "hugo-json-feed",
+  "shortcode-asciinema",
+  "shortcode-caniuse",
+  "shortcode-docs-bookmark",
+  "shortcode-mmt-netease",
+  "shortcode-rewards"
+]
+defaultContentLanguage = "en"
+languageCode = "en"
+hasCJKLanguage = true
+enableRobotsTXT = true
+enableEmoji = true
+enableGitInfo = true
+relativeURLs = false
+buildDrafts = false
+summaryLength = 150
+# ignore some build errors
+ignoreErrors = [
+  "warning-dev-version",
+  "error-get-remote-image",
+  "error-get-remote-json",
+  "error-remote-getjson",
+  "error-missing-instagram-accesstoken"
+]

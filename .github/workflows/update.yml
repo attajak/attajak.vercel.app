@@ -1,4 +1,4 @@
-name: Update theme
+name: Update FixIt components
 
 # Controls when the workflow will run
 on:
@@ -12,7 +12,7 @@ permissions:
   contents: write
 
 jobs:
-  Update-FixIt:
+  Update-FixIt-components:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
@@ -21,8 +21,8 @@ jobs:
           submodules: true
           fetch-depth: 0
 
-      - name: Update theme
-        run: git submodule update --remote --merge # -- ./themes/FixIt
+      - name: Update FixIt components
+        run: git submodule update --remote --merge
 
       - name: Generate hugo-fixit component list
         uses: hugo-fixit/action-component-list@v1
@@ -37,5 +37,5 @@ jobs:
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: ':arrow_up: Chore(theme): Update theme'
+          commit_message: ':arrow_up: Chore(FixIt): Update FixIt components'
           commit_author: 'github-actions[bot] <github-actions[bot]@users.noreply.github.com>'

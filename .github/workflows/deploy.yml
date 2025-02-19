@@ -3,6 +3,7 @@ on:
   push:
     branches: [ main ]
     paths:
+      - '.github/**'
       - 'assets/**'
       - 'config/**'
       - 'content/**'
@@ -12,7 +13,7 @@ on:
       - 'hugo.toml'
       - 'config.toml'
   workflow_run:
-    workflows: ['Update theme']
+    workflows: ['Update FixIt components']
     types:
       - completed
   workflow_dispatch:

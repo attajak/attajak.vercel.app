@@ -7,6 +7,7 @@ tags:
 categories:
 - hello
 # See details front matter: https://fixit.lruihao.cn/documentation/content-management/introduction/#front-matter
+draft: true
 ---
 
 Welcome to Hugo FixIt! This is your very first post.

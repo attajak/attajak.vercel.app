@@ -52,7 +52,13 @@ enableGitInfo = true
 # whether to use emoji code
 enableEmoji = true
 timeZone = "Asia/Bangkok"
-ignoreLogs = ['warning-dev-version']
+ignoreLogs = [
+  "warning-dev-version",
+  "error-get-remote-image",
+  "error-get-remote-json",
+  "error-remote-getjson",
+  "error-missing-instagram-accesstoken"
+]
 
 # -------------------------------------------------------------------------------------
 # Menu Configuration
@@ -296,8 +302,6 @@ ignoreLogs = ['warning-dev-version']
 # -------------------------------------------------------------------------------------
 
 [privacy]
-  # [privacy.twitter]
-    # enableDNT = true
   [privacy.x]
     enableDNT = true
   [privacy.youtube]
