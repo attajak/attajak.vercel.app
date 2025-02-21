@@ -63,7 +63,7 @@ disableThemeInject = false
   # whether to omit favicon resource links
   noFavicon = false
   # modern SVG favicon to use in place of older style .png and .ico files
-  svgFavicon = ""
+  svgFavicon = "/favicon/favicon.ico"
   # Safari mask icon color
   iconColor = "#5bbad5"
   # Windows v8-10 tile color
@@ -115,7 +115,7 @@ disableThemeInject = false
   # Header title config
   [header.title]
     # URL of the LOGO
-    logo = "/images/fixit.min.svg"
+    logo = "/favicon/safari-pinned-tab.svg"
     # title name
     name = "Attajak"
     # you can add extra information before the name (HTML format is supported), such as icons
@@ -467,7 +467,7 @@ disableThemeInject = false
 
 # Cookie consent config
 [cookieconsent]
-  enable = true
+  enable = false
   # text strings used for Cookie consent banner
   [cookieconsent.content]
     message = ""
