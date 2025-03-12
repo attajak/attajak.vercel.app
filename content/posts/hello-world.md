@@ -1,13 +1,13 @@
 ---
 title: Hello World
-date: 2025-01-01T07:31:11.998Z
+date: 2024-01-01T07:31:11.998Z
 tags:
 - hello
 - FixIt
 categories:
 - hello
 # See details front matter: https://fixit.lruihao.cn/documentation/content-management/introduction/#front-matter
-draft: true
+draft: false
 ---
 
 Welcome to Hugo FixIt! This is your very first post.

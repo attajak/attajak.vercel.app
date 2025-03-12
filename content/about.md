@@ -27,4 +27,4 @@ draft: false
 
 ---
 
-![Attajak Janrak](/images/attajak.jpg)
+![Attajak Janrak](/images/attajak.png)

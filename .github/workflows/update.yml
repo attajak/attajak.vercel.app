@@ -1,4 +1,4 @@
-name: Update FixIt components
+name: Update modules
 
 # Controls when the workflow will run
 on:
@@ -18,8 +18,8 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
         with:
-          submodules: true
-          fetch-depth: 0
+          submodules: recursive
+          # fetch-depth: 0
 
       - name: Update FixIt components
         run: git submodule update --remote --merge

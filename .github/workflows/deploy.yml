@@ -3,17 +3,14 @@ on:
   push:
     branches: [ main ]
     paths:
-      - '.github/**'
       - 'assets/**'
       - 'config/**'
       - 'content/**'
       - 'data/**'
       - 'static/**'
       - 'themes/**'
-      - 'hugo.toml'
-      - 'config.toml'
   workflow_run:
-    workflows: ['Update FixIt components']
+    workflows: ['Update modules']
     types:
       - completed
   workflow_dispatch:
@@ -38,8 +35,8 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          submodules: recursive # Fetch Hugo themes (true OR recursive)
+          # fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
@@ -47,7 +44,9 @@ jobs:
           hugo-version: ${{ vars.HUGO_VERSION || 'latest' }}
           extended: true
       - name: Hugo build
-        run: HUGO_ENV=production hugo --gc --minify --logLevel info -b /attajak.vercel.app/
+        run: HUGO_ENV=production hugo --gc --minify --logLevel info --baseURL '${{ steps.deployment.outputs.page_url }}'
+        env:
+          HUGO_ENV: production
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

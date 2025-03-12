@@ -35,3 +35,4 @@ ignoreErrors = [
   "error-remote-getjson",
   "error-missing-instagram-accesstoken"
 ]
+timeZone = "Asia/Bangkok"

@@ -6,3 +6,4 @@ resources
 _vendor
 .vercel
 jsconfig.json
+.env*
