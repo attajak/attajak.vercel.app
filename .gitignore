@@ -1,9 +1,9 @@
-node_modules
-build
-public
-resources
+node_modules/
+build/
+public/
+resources/
 .hugo_build.lock
-_vendor
+_vendor/
 .vercel
 jsconfig.json
 .env*
