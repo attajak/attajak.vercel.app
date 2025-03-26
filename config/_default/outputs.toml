@@ -4,3 +4,8 @@
 # -------------------------------------------------------------------------------------
 
 _merge = "shallow"
+home = ["html", "rss", "atom", "jsonfeed", "archives", "offline", "search"]
+page = ["html", "markdown"]
+section = ["html", "rss", "atom", "jsonfeed"]
+taxonomy = ["html"]
+term = ["html", "rss", "atom", "jsonfeed"]
