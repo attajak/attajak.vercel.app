@@ -4,7 +4,7 @@
 # -------------------------------------------------------------------------------------
 
 title = "Attajak"
-baseURL = "/attajak.vercel.app/"
+baseURL = "https://attajak.vercel.app/"
 theme = [
   "FixIt",
   "cmpt-flyfish",
