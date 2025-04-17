@@ -50,9 +50,7 @@ jobs:
           hugo-version: ${{ vars.HUGO_VERSION || 'latest' }}
           extended: true
       - name: Hugo build
-        env:
-          HUGO_ENV: production
-        run: hugo --gc --minify --logLevel info --baseURL ${{ steps.deployment.outputs.page_url }}
+        run: HUGO_ENV=production hugo --gc --minify --logLevel info --baseURL "${{ steps.deployment.outputs.page_url }}"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
