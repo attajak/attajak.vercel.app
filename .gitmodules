@@ -35,6 +35,6 @@
 [submodule "static/favicon"]
 	path = static/favicon
 	url = https://github.com/attajak/favicon.git
-[submodule "themes/short-mmt-netease"]
-	path = themes/short-mmt-netease
+[submodule "themes/shortcode-mmt-netease"]
+	path = themes/shortcode-mmt-netease
 	url = https://github.com/hugo-fixit/shortcode-mmt-netease.git
