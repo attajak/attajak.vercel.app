@@ -16,6 +16,7 @@ theme = [
   "shortcode-asciinema",
   "shortcode-caniuse",
   "shortcode-docs-bookmark",
+  "shortcode-mmt-netease",
   "shortcode-rewards"
 ]
 defaultContentLanguage = "en"
