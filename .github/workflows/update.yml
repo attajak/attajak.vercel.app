@@ -18,8 +18,8 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
         with:
-          submodules: recursive
-          # fetch-depth: 0
+          submodules: true
+          fetch-depth: 0
 
       - name: Update FixIt components
         run: git submodule update --remote --merge
@@ -33,6 +33,10 @@ jobs:
           readme_path: README.md
           exclude_repos: 'fixit-bundle'
           template: "- [{$repo.name}]({$repo.html_url})\\\n {$repo.description}"
+
+      - name: Print Output
+        id: output
+        run: echo "${{ steps.test-action.outputs.repos }}"
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
