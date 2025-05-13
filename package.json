@@ -5,12 +5,13 @@
   "description": "This is a quick start template for Hugo theme [FixIt](https://github.com/hugo-fixit/FixIt) & [FixIt-Bundle](https://github.com/hugo-fixit/fixit-bundle). It uses Git submodule feature to load the theme.",
   "main": "index.js",
   "scripts": {
-    "create": "hugo new content",
+    "create": "hugo new",
     "build": "hugo --gc --minify --logLevel info",
-    "server": "hugo server -D -E -F -M -N -O --gc --minify --disableFastRender --logLevel info --bind 0.0.0.0 -b http://localhost:1313/",
+    "server": "hugo server -D -E -F -M -N -O -w --gc --minify --disableFastRender --logLevel info --bind 0.0.0.0 -b http://localhost:1313/",
     "server:production": "npm run server -- --environment production",
-    "prepare": "git submodule update --init --recursive",
-    "update": "git submodule update --remote --merge"
+    "preupdate": "git submodule update --init --recursive",
+    "update": "git submodule update --remote --merge",
+    "postupdate": "git add -A && git commit -m ':arrow_up: Chore(FixIt): Update fixit-bundle version' && git push origin main"
   },
   "repository": {
     "type": "git",
