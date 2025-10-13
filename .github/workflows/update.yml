@@ -41,7 +41,7 @@ jobs:
         run: echo "${{ steps.action-component-list.outputs.repos }}"
 
       - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v6
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: ':arrow_up: Chore(FixIt): Update FixIt components'
           commit_author: 'github-actions[bot] <github-actions[bot]@users.noreply.github.com>'
