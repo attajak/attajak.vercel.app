@@ -7,7 +7,7 @@
   "scripts": {
     "create": "hugo new",
     "build": "hugo --gc --minify --logLevel info",
-    "server": "hugo server -D -E -F -M -N -O -w --gc --minify --disableFastRender --logLevel info --bind 0.0.0.0 -b http://localhost:1313/",
+    "server": "hugo server -D -E -F -M -N -O -w --gc --minify --disableFastRender --logLevel info --bind 0.0.0.0 --port 5000 --appendPort=false",
     "server:production": "npm run server -- --environment production",
     "preupdate": "git submodule update --init --recursive",
     "update": "git submodule update --remote --merge",
