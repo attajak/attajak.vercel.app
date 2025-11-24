@@ -1,3 +1,6 @@
+[submodule "static/favicon"]
+	path = static/favicon
+	url = https://github.com/attajak/favicon.git
 [submodule "themes/FixIt"]
 	path = themes/FixIt
 	url = https://github.com/hugo-fixit/FixIt.git
@@ -32,9 +35,6 @@
 [submodule "themes/shortcode-rewards"]
 	path = themes/shortcode-rewards
 	url = https://github.com/hugo-fixit/shortcode-rewards.git
-[submodule "static/favicon"]
-	path = static/favicon
-	url = https://github.com/attajak/favicon.git
 [submodule "themes/shortcode-mmt-netease"]
 	path = themes/shortcode-mmt-netease
 	url = https://github.com/hugo-fixit/shortcode-mmt-netease.git
