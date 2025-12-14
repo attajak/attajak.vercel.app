@@ -3,6 +3,7 @@ on:
   push:
     branches: [ main ]
     paths:
+      - '.github/workflows/deploy.yml'
       - 'assets/**'
       - 'config/**'
       - 'content/**'
@@ -50,7 +51,7 @@ jobs:
           hugo-version: ${{ vars.HUGO_VERSION || 'latest' }}
           extended: true
       - name: Hugo build
-        run: HUGO_ENV=production hugo --gc --minify --logLevel info --baseURL https://attajak.github.io/attajak.vercel.app/
+        run: HUGO_ENVIRONMENT=production hugo --gc --minify --logLevel info --baseURL /attajak.vercel.app # https://attajak.github.io/attajak.vercel.app/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:

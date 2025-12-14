@@ -1,0 +1,14 @@
+# -------------------------------------------------------------------------------------
+# Modules Configure
+# See: https://gohugo.io/hugo-modules/configuration/#module-config-imports
+# -------------------------------------------------------------------------------------
+
+[[imports]]
+  path = "github.com/hugo-fixit/FixIt"
+
+[[imports]]
+  path = "github.com/hugo-fixit/fixit-bundle"
+
+[hugoVersion]
+  extended = true
+  min = "0.134.1"

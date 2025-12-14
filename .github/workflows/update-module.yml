@@ -18,12 +18,24 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v6
+      
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
         with:
-          submodules: true
-          fetch-depth: 0
+          # use the environment variable HUGO_VERSION as the hugo version, if not set, use `latest`.
+          hugo-version: ${{ vars.HUGO_VERSION || 'latest' }}
+          extended: true
 
       - name: Update FixIt components
-        run: git submodule update --remote --merge
+        run: |
+          hugo mod get -u github.com/hugo-fixit/FixIt@main
+          hugo mod get -u github.com/hugo-fixit/fixitbundle@latest
+
+      - name: Tidy go.mod, go.sum
+        run: hugo mod tidy
+
+      - name: FixIt component list
+        run: hugo mod graph
 
       - name: Generate hugo-fixit component list
         id: action-component-list
@@ -33,15 +45,11 @@ jobs:
         with:
           comment_tag_name: HUGO_FIXIT_COMPONENTS
           readme_path: README.md
-          exclude_repos: 'fixit-bundle'
+          # exclude_repos: 'fixit-bundle'
           template: "- [{$repo.name}]({$repo.html_url})\\\n {$repo.description}"
-
-      - name: Print Output
-        id: output
-        run: echo "${{ steps.action-component-list.outputs.repos }}"
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
-          commit_message: ':arrow_up: Chore(FixIt): Update FixIt components'
+          commit_message: ':arrow_up: Chore(FixIt): Update FixIt components version'
           commit_author: 'github-actions[bot] <github-actions[bot]@users.noreply.github.com>'

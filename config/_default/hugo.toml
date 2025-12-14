@@ -5,20 +5,7 @@
 
 title = "Attajak"
 baseURL = "https://attajak.vercel.app/"
-theme = [
-  "FixIt",
-  "cmpt-flyfish",
-  "cmpt-mdevtools",
-  "cmpt-translate",
-  "component-projects",
-  "hugo-atom-feed",
-  "hugo-json-feed",
-  "shortcode-asciinema",
-  "shortcode-caniuse",
-  "shortcode-docs-bookmark",
-  "shortcode-mmt-netease",
-  "shortcode-rewards"
-]
+# theme = ["FixIt", "cmpt-flyfish", "cmpt-mdevtools", "cmpt-translate", "component-projects", "hugo-atom-feed", "hugo-json-feed", "shortcode-asciinema", "shortcode-caniuse", "shortcode-docs-bookmark", "shortcode-missing-translation", "shortcode-mmt-netease", "shortcode-rewards"]
 defaultContentLanguage = "en"
 languageCode = "en"
 hasCJKLanguage = true

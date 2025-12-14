@@ -2,16 +2,16 @@
   "name": "attajak.vercel.app",
   "private": "true",
   "version": "1.0.0",
-  "description": "This is a quick start template for Hugo theme [FixIt](https://github.com/hugo-fixit/FixIt) & [FixIt-Bundle](https://github.com/hugo-fixit/fixit-bundle). It uses Git submodule feature to load the theme.",
+  "description": "This is a quick start template for Hugo theme [FixIt](https://github.com/hugo-fixit/FixIt) & [FixIt-Bundle](https://github.com/hugo-fixit/fixit-bundle). It uses Hugo module feature to load the theme.",
   "main": "index.js",
   "scripts": {
-    "create": "hugo new",
+    "create": "hugo new content",
     "build": "hugo --gc --minify --logLevel info",
-    "server": "hugo server -D -E -F -M -N -O -w --gc --minify --disableFastRender --logLevel info --bind 0.0.0.0 --port 5000 --appendPort=false",
+    "server": "hugo server -D -E -F -M -N -O -w --gc --minify --disableFastRender --logLevel info --bind 0.0.0.0 --baseURL http://localhost:1313",
     "server:production": "npm run server -- --environment production",
-    "preupdate": "git submodule update --init --recursive",
-    "update": "git submodule update --remote --merge",
-    "postupdate": "git add -A && git commit -m ':arrow_up: Chore(FixIt): Update fixit-bundle version' && git push origin main"
+    "preupdate": "git submodule update --init --recursive && git submodule update --remote --merge",
+    "update": "hugo mod get -u github.com/hugo-fixit/FixIt@main && hugo mod get -u github.com/hugo-fixit/fixit-bundle@latest && hugo mod tidy && hugo mod graph",
+    "postupdate": "git add go.mod go.sum .gitmodules && git commit -m ':arrow_up: Chore(FixIt): Update FixIt components version' && git push origin main"
   },
   "repository": {
     "type": "git",
