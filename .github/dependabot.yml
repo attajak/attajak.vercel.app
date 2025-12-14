@@ -14,15 +14,15 @@ updates:
       - "attajak"
     labels:
       - "dependencies"
-  - package-ecosystem: "gomod"
-    directory: "/"
-    schedule:
-      interval: "weekly" # "monthly"
-    open-pull-requests-limit: 1000
-    assignees:
-      - "attajak"
-    labels:
-      - "dependencies"
+  # - package-ecosystem: "gomod"
+    # directory: "/"
+    # schedule:
+      # interval: "weekly" # "monthly"
+    # open-pull-requests-limit: 1000
+    # assignees:
+      # - "attajak"
+    # labels:
+      # - "dependencies"
   - package-ecosystem: "gitsubmodule" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
