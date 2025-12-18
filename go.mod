@@ -3,7 +3,7 @@ module github.com/attajak/attajak.vercel.app
 go 1.20
 
 require (
-	github.com/hugo-fixit/FixIt v0.4.0-alpha.2.0.20251201065438-053e5b4bd086 // indirect
+	github.com/hugo-fixit/FixIt v0.4.0-alpha.2.0.20251217085652-93478b47e16d // indirect
 	github.com/hugo-fixit/cmpt-flyfish v1.1.0 // indirect
 	github.com/hugo-fixit/cmpt-mdevtools v1.1.0 // indirect
 	github.com/hugo-fixit/cmpt-translate v1.10.3 // indirect
