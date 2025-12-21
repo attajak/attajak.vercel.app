@@ -21,7 +21,7 @@ images = ["/images/attajak.jpg"]
 # FixIt 0.2.12 | NEW enable PWA
 enablePWA = true
 # FixIt 0.2.14 | NEW whether to add external Icon for external links automatically
-externalIcon = false
+externalIcon = true
 # FixIt 0.3.13 | NEW whether to capitalize titles
 capitalizeTitles = true
 # FixIt 0.3.0 | NEW whether to add site title to the title of every page
@@ -43,7 +43,7 @@ disableThemeInject = false
   name = "attajak"
   email = "janrak@gmail.com"
   link = "https://github.com/attajak"
-  avatar = ""
+  avatar = "/images/attajak.png"
 
 # FixIt 0.3.0 | NEW public Git repository information only then enableGitInfo is true
 [gitInfo]
@@ -63,7 +63,7 @@ disableThemeInject = false
   # whether to omit favicon resource links
   noFavicon = false
   # modern SVG favicon to use in place of older style .png and .ico files
-  svgFavicon = "/favicon/favicon.ico"
+  svgFavicon = "/favicon.ico"
   # Safari mask icon color
   iconColor = "#5bbad5"
   # Windows v8-10 tile color
@@ -115,7 +115,7 @@ disableThemeInject = false
   # Header title config
   [header.title]
     # URL of the LOGO
-    logo = "/favicon/safari-pinned-tab.svg"
+    logo = "/images/attajak.png"
     # title name
     name = "Attajak"
     # you can add extra information before the name (HTML format is supported), such as icons
@@ -493,7 +493,7 @@ disableThemeInject = false
   enable = true
   permalink = "https://github.com/attajak/attajak.vercel.app"
   title = "View source on GitHub"
-  position = "right" # ["left", "right"]
+  position = "left" # ["left", "right"]
 
 # FixIt 0.2.14 | NEW Gravatar config
 [gravatar]
@@ -507,7 +507,7 @@ disableThemeInject = false
 [backToTop]
   enable = true
   # Scroll percent label in b2t button
-  scrollpercent = false
+  scrollpercent = true
 
 # FixIt 0.2.16 | NEW Reading progress bar
 [readingProgress]
@@ -580,13 +580,13 @@ disableThemeInject = false
   # FixIt component (fixit-bundle)
   # cmpt-flyfish
   [flyfish]
-    enable = true
+    enable = false
     light = "rgb(0 119 190 / 10%)"
     dark = "rgb(255 255 255 / 10%)"
 
   # Mobile Devtools config
   [mDevtools]
-    enable = true
+    enable = false
     # "eruda", "vConsole" supported
     type = "eruda"
 
@@ -963,5 +963,5 @@ disableThemeInject = false
     images = []
     # Publisher info
     [page.seo.publisher]
-      name = ""
-      logoUrl = ""
+      name = "Attajak"
+      logoUrl = "/images/attajak.png"

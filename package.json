@@ -7,10 +7,10 @@
   "scripts": {
     "create": "hugo new content",
     "build": "hugo --gc --minify --logLevel info",
-    "server": "hugo server -D -E -F -M -N -O -w --gc --minify --disableFastRender --logLevel info --bind 0.0.0.0 --baseURL http://localhost:1313",
+    "server": "hugo server -D -E -F -M -N -O --disableFastRender --logLevel info --bind 0.0.0.0 --baseURL http://localhost:1313",
     "server:production": "npm run server -- --environment production",
     "preupdate": "git submodule update --init --recursive && git submodule update --remote --merge",
-    "update": "hugo mod get -u github.com/hugo-fixit/FixIt@main && hugo mod get -u github.com/hugo-fixit/fixit-bundle@latest && hugo mod tidy && hugo mod graph",
+    "update": "hugo mod get -u github.com/hugo-fixit/fixit-bundle@latest && hugo mod tidy && hugo mod graph",
     "postupdate": "git add go.mod go.sum .gitmodules && git commit -m ':arrow_up: Chore(FixIt): Update FixIt components version' && git push origin main"
   },
   "repository": {
