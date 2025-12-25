@@ -17,7 +17,7 @@ fingerprint = ""
 # NEW date format
 dateFormat = "2006-01-02"
 # website images for Open Graph and Twitter Cards
-images = ["/images/attajak.jpg"]
+images = ["/images/attajak.png"]
 # FixIt 0.2.12 | NEW enable PWA
 enablePWA = true
 # FixIt 0.2.14 | NEW whether to add external Icon for external links automatically
@@ -42,7 +42,7 @@ disableThemeInject = false
 [author]
   name = "attajak"
   email = "janrak@gmail.com"
-  link = "https://github.com/attajak"
+  link = "https://attajak.vercel.app"
   avatar = "/images/attajak.png"
 
 # FixIt 0.3.0 | NEW public Git repository information only then enableGitInfo is true
@@ -265,8 +265,8 @@ disableThemeInject = false
   Twitter = "attajak"
   Instagram = "attajak"
   Facebook = "attajak"
-  Telegram = ""
-  Medium = ""
+  Telegram = "attajak"
+  Medium = "attajak"
   Gitlab = "attajak"
   Youtubelegacy = ""
   Youtubecustom = ""
@@ -276,33 +276,33 @@ disableThemeInject = false
   Keybase = ""
   Pinterest = ""
   Reddit = ""
-  Codepen = ""
-  FreeCodeCamp = ""
-  Bitbucket = ""
+  Codepen = "attajak"
+  FreeCodeCamp = "attajak"
+  Bitbucket = "attajakjanrak"
   Stackoverflow = ""
   Weibo = ""
   Odnoklassniki = ""
-  VK = ""
-  Flickr = ""
+  VK = "attajak"
+  Flickr = "attajakz"
   Xing = ""
   Snapchat = ""
-  Soundcloud = ""
-  Spotify = ""
+  Soundcloud = "attajak"
+  Spotify = "attajak"
   Bandcamp = ""
-  Paypal = ""
+  Paypal = "attajak"
   Fivehundredpx = ""
   Mix = ""
   Goodreads = ""
   Lastfm = ""
-  Foursquare = ""
+  Foursquare = "attajak"
   Hackernews = ""
   Kickstarter = ""
-  Patreon = ""
-  Steam = ""
-  Twitch = ""
-  Strava = ""
-  Skype = ""
-  Whatsapp = ""
+  Patreon = "attajak"
+  Steam = "attajak"
+  Twitch = "attajak"
+  Strava = "attajak"
+  Skype = "attajak"
+  Whatsapp = "attajak"
   Zhihu = ""
   Douban = ""
   Angellist = ""
@@ -311,11 +311,11 @@ disableThemeInject = false
   Deviantart = ""
   Behance = ""
   Dribbble = ""
-  Wordpress = ""
-  Vine = ""
+  Wordpress = "attajak"
+  Vine = "attajak"
   Googlescholar = ""
   Researchgate = ""
-  Mastodon = ""
+  Mastodon = "attajak"
   Thingiverse = ""
   Devto = ""
   Gitea = ""
@@ -325,13 +325,13 @@ disableThemeInject = false
   ORCID = ""
   Liberapay = ""
   Ko-Fi = ""
-  BuyMeaCoffee = ""
-  Linktree = ""
+  BuyMeaCoffee = "attajak"
+  Linktree = "attajak"
   QQ = ""
   QQGroup = "" # https://qun.qq.com/join.html
   Diaspora = ""
   CSDN = ""
-  Discord = ""
+  Discord = "attajak"
   DiscordInvite = ""
   Lichess = ""
   Pleroma = ""
@@ -343,9 +343,9 @@ disableThemeInject = false
   Feishu = ""
   TryHackMe = ""
   Douyin = ""
-  TikTok = ""
+  TikTok = "attajak"
   Credly = ""
-  Phone = ""
+  Phone = "+66627824869"
   Email = "janrak@gmail.com"
   RSS = true
   # custom social links like the following
@@ -447,9 +447,9 @@ disableThemeInject = false
 # Site SEO config
 [seo]
   # image URL
-  image = ""
+  image = "/images/attajak.png"
   # thumbnail URL
-  thumbnailUrl = ""
+  thumbnailUrl = "https://attajak.vercel.app"
 
 # Analytics config
 [analytics]
@@ -511,7 +511,7 @@ disableThemeInject = false
 
 # FixIt 0.2.16 | NEW Reading progress bar
 [readingProgress]
-  enable = false
+  enable = true
   # Available values: ["left", "right"]
   start = "left"
   # Available values: ["top", "bottom"]
@@ -566,6 +566,7 @@ disableThemeInject = false
   assets = [
     "inject/cmpt-flyfish.html",
     "inject/cmpt-mdevtools.html",
+    "inject/santa-hat.fixit.html",
     "inject/cmpt-translate.html",
     "inject/component-projects.html",
     "inject/shortcode-caniuse.html",
@@ -580,13 +581,13 @@ disableThemeInject = false
   # FixIt component (fixit-bundle)
   # cmpt-flyfish
   [flyfish]
-    enable = false
+    enable = true
     light = "rgb(0 119 190 / 10%)"
     dark = "rgb(255 255 255 / 10%)"
 
   # Mobile Devtools config
   [mDevtools]
-    enable = false
+    enable = true
     # "eruda", "vConsole" supported
     type = "eruda"
 

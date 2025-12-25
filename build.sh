@@ -10,11 +10,11 @@
 main() {
 
   DART_SASS_VERSION=1.93.2
-  GO_VERSION=1.25.3
-  HUGO_VERSION=0.152.2
-  NODE_VERSION=22.20.0
+  GO_VERSION=1.25.4
+  HUGO_VERSION=0.153.1
+  NODE_VERSION=24.11.1
 
-  export TZ=Asia/Bangkok # TZ=Europe/Oslo
+  export TZ=Asia/Bangkok
 
   # Install Dart Sass
   echo "Installing Dart Sass ${DART_SASS_VERSION}..."
