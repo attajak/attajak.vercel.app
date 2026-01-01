@@ -27,7 +27,7 @@ jobs:
           extended: true
 
       - name: Update FixIt components
-        run: hugo mod get -u github.com/hugo-fixit/fixit-bundle@latest
+        run: hugo mod get -u
 
       - name: Tidy go.mod, go.sum
         run: hugo mod tidy
