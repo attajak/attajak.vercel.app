@@ -14,6 +14,7 @@ This site using [Hugo](https://gohugo.io/) + [FixIt-bundle](https://github.com/h
 <details>
   <summary>FixIt-bundle Components</summary>
 <!-- HUGO_FIXIT_COMPONENTS:START -->
+
 <!-- HUGO_FIXIT_COMPONENTS:END -->
 </details>
 
