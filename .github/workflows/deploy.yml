@@ -51,11 +51,7 @@ jobs:
           hugo-version: ${{ vars.HUGO_VERSION || 'latest' }}
           extended: true
       - name: Hugo build
-        run: HUGO_ENVIRONMENT=production hugo --gc --minify --logLevel info --baseURL /attajak.vercel.app # https://attajak.github.io/attajak.vercel.app/
-      - name: notify vercel
-        uses: vercel/repository-dispatch/actions/status@v1
-        with:
-          name: Vercel - attajak: lint
+        run: hugo --gc --minify --logLevel info --baseURL /attajak.vercel.app
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
