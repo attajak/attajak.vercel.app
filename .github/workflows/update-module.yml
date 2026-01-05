@@ -13,11 +13,14 @@ permissions:
   id-token: write
 
 jobs:
-  Update-FixIt-components:
+  Update-modules:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
         uses: actions/checkout@v6
+        with:
+          submodules: true
+          fetchdepth: 0
       
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -26,14 +29,14 @@ jobs:
           hugo-version: ${{ vars.HUGO_VERSION || 'latest' }}
           extended: true
 
+      - name: Update gitmodules
+        run: git submodule update --remote --merge
+
       - name: Update FixIt components
-        run: hugo mod get -u
-
-      - name: Tidy go.mod, go.sum
-        run: hugo mod tidy
-
-      - name: FixIt component list
-        run: hugo mod graph
+        run: |
+          hugo mod get -u
+          hugo mod tidy
+          hugo mod graph
 
       - name: Generate hugo-fixit component list
         id: action-component-list
@@ -49,5 +52,5 @@ jobs:
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
-          commit_message: ':arrow_up: Chore(FixIt): Update FixIt components version'
+          commit_message: ':arrow_up: Chore(Update modules): Update modules version'
           commit_author: 'github-actions[bot] <github-actions[bot]@users.noreply.github.com>'
