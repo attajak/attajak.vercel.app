@@ -54,8 +54,8 @@ jobs:
         run: HUGO_ENVIRONMENT=production hugo --gc --minify --logLevel info --baseURL /attajak.vercel.app # https://attajak.github.io/attajak.vercel.app/
       - name: notify vercel
         uses: vercel/repository-dispatch/actions/status@v1
-          with:
-            name: Vercel - attajak: lint
+        with:
+          name: Vercel - attajak: lint
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
