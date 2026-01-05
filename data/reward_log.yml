@@ -3,8 +3,8 @@
 # origin: [alipay, bitcoin, paypal, wechatpay, ...]
 
 message: Thanks all!
-currency: CNY
-symbol: ¥
+currency: THB
+symbol: ฿
 # The sponsor logs inherit the FixIt Timeline events
 logs:
   - date: "2006-01-02 15:04:05"
