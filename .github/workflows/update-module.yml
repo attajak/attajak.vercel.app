@@ -45,7 +45,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           comment_tag_name: HUGO_FIXIT_COMPONENTS
-          readme_path: README.md
+          readme_path:
+            - "README.md"
+            - "content/_index.md"
           # exclude_repos: 'fixit-bundle'
           template: "- [{$repo.name}]({$repo.html_url})\\\n {$repo.description}"
 
