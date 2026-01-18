@@ -761,7 +761,6 @@ ignoreList = []
 # Depends on open custom blocks https://fixit.lruihao.cn/references/blocks/
 [customPartials]
 head = [
-  "inject/component-projects.html",
   "inject/fixit-docs-bookmark.html",
   "inject/shortcode-rewards.html"
 ]
@@ -775,8 +774,9 @@ widgets = []
 assets = [
   "inject/cmpt-flyfish.html",
   "inject/cmpt-mdevtools.html",
-  "inject/santa-hat.fixit.html",
   "inject/cmpt-translate.html",
+  "inject/component-projects.html",
+  "inject/santa-hat.fixit.html",
   "inject/shortcode-caniuse.html"
 ]
 postTocBefore = []
