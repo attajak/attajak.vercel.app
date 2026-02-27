@@ -19,7 +19,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v6
         with:
-          submodules: true
+          submodules: recursive
           fetch-depth: 0
       
       - name: Setup Hugo
@@ -52,5 +52,5 @@ jobs:
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
-          commit_message: ':arrow_up: Chore(deps): Update theme component version'
+          commit_message: ':arrow_up: Chore(deps): Update theme components version'
           commit_author: 'github-actions[bot] <github-actions[bot]@users.noreply.github.com>'
