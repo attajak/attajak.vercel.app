@@ -731,6 +731,10 @@ maxShownLines = 10
 # whether to enable code copy button
 copyable = true
 # [classic] whether to enable line numbers toggle button in the code block header
+# [classic] whether to enable code download button in the code block header
+downloadable = false
+# [classic] whether to enable code fullscreen button in the code block header
+fullscreen = false
 lineNosToggler = true
 # [classic] whether to enable toggle line wrapping button in the code block header
 lineWrapToggler = true
@@ -748,7 +752,7 @@ boxed = true
 
 # FixIt 0.4.2 | NEW File tree config
 # See https://fixit.lruihao.cn/documentation/content-management/shortcodes/extended/file-tree/
-[params.filetree]
+[filetree]
 # the expand level of the tree (expand all: -1, collapse all: 0)
 level = 1
 # whether to append a trailing "/" to folder names
