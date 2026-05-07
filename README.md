@@ -2,7 +2,7 @@
 
 <!-- HUGO_FIXIT_COMPONENTS:START -->
 - [fixit-bundle](https://github.com/hugo-fixit/fixit-bundle)\
- �� Bundles the FixIt core theme and all hugo-fixit components into a single component.
+ 🌲 Bundles the FixIt core theme and all hugo-fixit components into a single component.
 - [cmpt-flyfish](https://github.com/hugo-fixit/cmpt-flyfish)\
  🐟 A canvas implemented animation effect of small fish swimming.
 - [cmpt-mdevtools](https://github.com/hugo-fixit/cmpt-mdevtools)\
