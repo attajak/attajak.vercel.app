@@ -11,10 +11,13 @@ main() {
 
   DART_SASS_VERSION=1.99.0
   GO_VERSION=1.26.3
-  HUGO_VERSION=0.162.1
+  HUGO_VERSION=0.163.0
   NODE_VERSION=24.15.0
 
   export TZ=Asia/Bangkok
+
+  # Create .local directory if it doesn't exist
+  mkdir -p "${HOME}/.local"
 
   # Install Dart Sass
   echo "Installing Dart Sass ${DART_SASS_VERSION}..."
