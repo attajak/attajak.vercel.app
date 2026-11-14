@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "skills": {
+    "fixit-config": {
+      "source": "hugo-fixit/skills",
+      "sourceType": "github",
+      "skillPath": "skills/fixit-config/SKILL.md",
+      "computedHash": "81d675d5a188c3dc07d461866e8324927b8a44a7741976aa3d329c7065cc6927"
+    },
+    "fixit-content": {
+      "source": "hugo-fixit/skills",
+      "sourceType": "github",
+      "skillPath": "skills/fixit-content/SKILL.md",
+      "computedHash": "a716164b790136170607dd94645bd438a8efe384318e78f254e3890bda184d59"
+    },
+    "fixit-customize": {
+      "source": "hugo-fixit/skills",
+      "sourceType": "github",
+      "skillPath": "skills/fixit-customize/SKILL.md",
+      "computedHash": "6cd7989545340c5dda1fde7f1bf6ba8c7ca7aae7a2ab571b4cad1b2f3cb91532"
+    },
+    "fixit-dev": {
+      "source": "hugo-fixit/skills",
+      "sourceType": "github",
+      "skillPath": "skills/fixit-dev/SKILL.md",
+      "computedHash": "223d07905db05e948bd12fc0f20e73137e9502344943c3340b47a63c29bfbe28"
+    }
+  }
+}
